@@ -3,3 +3,8 @@
 */terraform.tfstate.backup
 */.terraform
 */mykey*
+
+docker-demo-3/backend.tf
+jenkins-packer-demo/*.*
+jenkins-packer-demo/output
+jenkins-packer-demo/output/*.*

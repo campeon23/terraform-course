@@ -7,7 +7,6 @@ data "cloudinit_config" "cloudinit-jenkins" {
     content      = templatefile("scripts/jenkins-init.sh", {
       DEVICE            = var.INSTANCE_DEVICE_NAME
       JENKINS_VERSION   = var.JENKINS_VERSION
-      PACKER_VERSION    = var.PACKER_VERSION
       TERRAFORM_VERSION = var.TERRAFORM_VERSION
     })
   }

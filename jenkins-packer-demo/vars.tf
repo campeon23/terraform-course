@@ -2,6 +2,10 @@ variable "AWS_REGION" {
   default = "us-east-1"
 }
 
+variable "AWS_PROFILE" {
+  default = "terraform"
+}
+
 variable "PATH_TO_PRIVATE_KEY" {
   default = "mykey"
 }
@@ -20,10 +24,6 @@ variable "JENKINS_VERSION" {
 
 variable "TERRAFORM_VERSION" {
   default = "1.6.6"
-}
-
-variable "PACKER_VERSION" {
-  default = "1.10.0"
 }
 
 variable "APP_INSTANCE_COUNT" {
