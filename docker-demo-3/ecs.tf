@@ -4,7 +4,7 @@ resource "aws_ecs_cluster" "example-cluster" {
 }
 
 resource "aws_launch_configuration" "ecs-example-launchconfig" {
-  name_prefix          = "ecs-launchconfig"
+  name_prefix          = "ecs-example-launchconfig"
   image_id             = var.ECS_AMIS[var.AWS_REGION]
   instance_type        = var.ECS_INSTANCE_TYPE
   key_name             = aws_key_pair.mykeypair.key_name
